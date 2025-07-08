@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+.env
+.env.*          # Ignora arquivos como .env.development, .env.test, etc.
+
+# Logs
+logs
+*.log
+*.log.*
+log/
+
+# Diretórios temporários
+tmp/
+temp/
+
+# Cache
+.cache/
+.next/
+out/
+dist/
+build/
+
+# Editor e SO
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Testes
+coverage/
+.nyc_output/
+
+# Exportações e dados
+*.csv
+*.sqlite
+*.sqlite3
+*.bak

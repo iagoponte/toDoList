@@ -1,0 +1,33 @@
+<h2 mat-dialog-title>Editar Tarefa</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form" (ngSubmit)="salvar()" mat-dialog-content>
+    <mat-form-field appearance="fill">
+      <mat-label>Título</mat-label>
+      <input matInput formControlName="titulo" />
+      <mat-error *ngIf="form.get('titulo')?.hasError('required')"
+        >Campo obrigatório</mat-error
+      >
+      <mat-error *ngIf="form.get('titulo')?.hasError('minlength')"
+        >Mínimo de 3 caracteres</mat-error
+      >
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Descrição</mat-label>
+      <input matInput formControlName="descricao" />
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+
+<mat-dialog-actions align="end">
+  <button mat-button (click)="cancelar()">Cancelar</button>
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="salvar()"
+    [disabled]="form.invalid"
+  >
+    Salvar
+  </button>
+</mat-dialog-actions>
