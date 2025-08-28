@@ -23,13 +23,16 @@ Clone o repositório:
 ```bash
 git clone https://github.com/iagoponte/toDoList.git
 cd toDoList
-
-Backend
+```
+## Backend
+```bash
 cd toDoList_back
 npm install
 npm run dev
+```
 
-Frontend
+## Frontend
+```bash
 cd toDoList_front
 npm install
 ng serve
