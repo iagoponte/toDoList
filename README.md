@@ -23,3 +23,22 @@ Clone o repositório:
 ```bash
 git clone https://github.com/iagoponte/toDoList.git
 cd toDoList
+
+Backend
+cd toDoList_back
+npm install
+npm run dev
+
+Frontend
+cd toDoList_front
+npm install
+ng serve
+```
+
+## Funcionalidades
+- Adicionar, editar e remover tarefas.
+- Interface interativa para manipulação da lista.
+- Exportação da lista de tarefas em formato Excel (.xlsx).
+- Integração entre frontend (Angular) e backend (Express).
+
+
